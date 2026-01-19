@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Job</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="navbar">
+    <h1>Post a Job</h1>
+    <a href="/" class="btn">Home</a>
+</header>
+
+<main class="container">
+    <form class="job-form" method="post">
+        <label>Job Title</label>
+        <input type="text" name="title" required>
+
+        <label>Company</label>
+        <input type="text" name="company" required>
+
+        <label>Location</label>
+        <input type="text" name="location" required>
+
+        <label>Description</label>
+        <textarea name="description" rows="5" required></textarea>
+
+        <button type="submit" class="btn submit-btn">Post Job</button>
+    </form>
+</main>
+
+<footer class="footer">
+    <p>© 2026 Job Portal</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0a66c2;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 22px;
+}
+
+.btn {
+    background-color: white;
+    color: #0a66c2;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e6effa;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Job Cards */
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.job-card h2 {
+    color: #0a66c2;
+    margin-bottom: 8px;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.location {
+    font-size: 14px;
+    color: gray;
+    margin: 6px 0;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Empty State */
+.empty {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+}
+
+/* Form */
+.job-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.job-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.job-form input,
+.job-form textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #0a66c2;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    font-size: 14px;
+}
